@@ -1,0 +1,19 @@
+.nav-drawer-btn{
+    width: 3rem;
+    height: 3rem;
+    background: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+.nav-drawer-btn span{
+    display: inline-block;
+    width: 3rem;
+    height: 2.5px;
+    background: white;
+    position: absolute;
+    left: 0;
+}

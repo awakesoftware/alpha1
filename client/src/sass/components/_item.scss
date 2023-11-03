@@ -1,0 +1,25 @@
+.item{
+    border: 1px solid grey; 
+    height: 175px;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+.item > h4{
+    display: inline;
+}
+.item > button{
+    float: right;
+    display: inline;
+}
+.item-thumbnail{
+    border: 1px solid black;
+    min-height: 175px;
+    height: 175px;
+    max-height: 175px;
+    min-width: 300px;
+    width: 300px;
+    object-fit: scale-down;
+    background-color: black;
+    float: left;
+}

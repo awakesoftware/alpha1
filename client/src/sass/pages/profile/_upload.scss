@@ -1,0 +1,57 @@
+.upload {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+// .upload-form {
+
+// }
+
+// .upload-display {
+
+// }
+
+.upload-inputs {
+    width: 75%;
+}
+
+// .upload-inputarea {
+
+// }
+
+.upload-textarea {
+    width: 350px;
+    height: 150px;
+    resize: none;
+}
+
+.upload-file {
+    display: none;
+}
+
+.selectors {
+    margin-top: 25px;
+}
+
+.file-selector {
+    border: 1px solid black;
+    padding: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(34, 134, 34);
+    color: white;
+}
+
+.video-tile {
+    border: 1px solid black;
+    width: 95%;
+    height: 80%;
+}
+
+.display-image {
+    width: 50%;
+}
+
+.paragraph {
+    color: black;
+}

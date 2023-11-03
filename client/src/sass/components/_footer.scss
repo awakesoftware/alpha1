@@ -1,0 +1,63 @@
+@use '../base/' as *;
+
+.footer {
+    text-align: center;
+    color: $awake-navy;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    background-color: #ffefdf;
+    left: 0;
+    bottom: 0;
+    padding-left: 5rem;
+    height: 2em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    > ul, > section {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    > section:nth-child(3){
+        justify-content: center;
+    }
+
+}
+.company-details {
+    color: inherit;
+    text-decoration: none;
+}
+.company-details:hover {
+    color: $awake-blue;
+}
+.terms {
+    color: inherit;
+}
+.terms:hover {
+    color: $awake-blue;
+}
+.social-link-a {
+    color: inherit;
+}
+.social-link {
+    margin: 10px 10px;
+}
+.youtube:hover {
+    color: #F00;
+}
+
+.instagram:hover {
+    color: #E1306C;
+}
+
+.facebook:hover {
+    color: #1877f2;
+}
+
+.linkedin:hover {
+    color: #0a66c2;
+}

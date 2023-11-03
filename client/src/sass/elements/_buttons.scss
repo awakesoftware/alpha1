@@ -1,0 +1,49 @@
+/* .red-btn {
+    cursor: pointer;
+    background-color: #a11e2d;
+    color: #ffefdf;
+    padding: 5px;
+    margin: 5px;
+}
+
+.blue-btn {
+    cursor: pointer;
+    background-color: #007caa;
+    color: #ffefdf;
+    padding: 5px;
+    margin: 5px;
+}
+
+.yellow-btn {
+    cursor: pointer;
+    background-color: #dbaf47;
+    color: #ffefdf;
+    padding: 5px;
+    margin: 5px;
+} */
+
+.close-btn {
+    color: red;
+    border: none;
+    cursor: pointer;
+}
+
+.subscribe {
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    width: 120px;
+    height: 35px;
+}
+
+.subscribed{
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    width: 120px;
+    height: 35px;
+    cursor: not-allowed;
+}

@@ -1,0 +1,54 @@
+@use '../base/' as *;
+
+.sidebar{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+.sidebar > li{
+    display: flex;
+    align-items: center;
+    width: 3em;
+    height: 6em;
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+.sidebar > li a {
+    padding-top: 1em;
+    width: 100%;
+    height: 2em;
+    margin: 0 auto;
+    border-radius: 5px;
+    display: inline-block;
+    color: #ffefdf;
+    text-align: center;
+    text-decoration: none;
+    
+    transition: 200ms linear;
+
+    > i {
+        font-size: 1.2em;
+
+    }
+    
+    
+    &:hover {
+        background-color: lighten($color: $awake-navy, $amount: 20);
+    }
+
+}
+
+@media only screen and (max-width: 1400px){
+    .sidebar-link-desc{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .sidebar{
+        display: none;
+    }
+}

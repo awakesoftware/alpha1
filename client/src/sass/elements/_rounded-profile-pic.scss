@@ -1,0 +1,11 @@
+.profile-dropdown-btn-img, 
+.sub-icons > li > a > img,
+.rounded-profile-pic{
+    //* height and width should be inline styles
+    //* to allow for different sized rounded images
+    cursor: pointer;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 2px solid white;
+    object-fit: cover;
+}

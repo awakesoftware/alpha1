@@ -1,0 +1,16 @@
+@use '../base/' as *;
+
+.footer-nav {
+    display: none;
+}
+
+@media (max-width: 600px){
+    .footer-nav {
+        bottom: 0;
+        z-index: 3;
+        height: 4rem;
+        width: 100%;
+        background: $awake-red;
+        position: fixed;
+    }
+}

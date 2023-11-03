@@ -1,0 +1,157 @@
+@use '../base' as *;
+
+//* Page Colors
+$light-mode: whitesmoke;
+$dark-mode: #444;
+///// $color-theme: $light-mode;
+
+//* Major Component Colors
+
+//* General Styles-------------------------------------------------------------------------|
+
+
+
+//* Mixins Styles--------------------------------------------------------------------------|
+@mixin light-theme {
+
+    ::selection {
+        background: $awake-gold;
+    }
+
+    .main-content {
+        background-color: whitesmoke;
+    }
+
+    input {
+        color: black;
+    }
+    
+    .searchbar-suggestions {
+        // background-color: darken($color: $light-mode, $amount: 10);
+        background-color: $awake-red;
+        color: $awake-cream;
+
+        > li:hover {
+            background-color: lighten($color: $awake-red, $amount: 10);
+        }
+    }
+
+    input {
+        background-color: darken($color: $light-mode, $amount: 10);
+    }
+
+    .auth-form-left, .auth-form-right {
+        background-color: $awake-cream;
+    }
+    .auth-desc {
+        background-image: linear-gradient(to right bottom, $awake-red, $awake-gold, $awake-red);
+    }
+
+    .nav-logo-light {
+        display: inline-block;
+    }
+
+    .nav-logo-dark {
+        display: none;
+    }
+    
+    .sidebar, .nav-links {
+        background-color: $awake-red;
+        
+        > li {
+            
+            > a.active, > a:hover {
+                background-color: lighten($awake-red, 20);            
+            }
+        }
+    }
+    
+    .dropdown{
+        
+        > ul {
+            background-color: $awake-red;
+
+            > a:hover{
+               background-color: lighten($awake-red, 20);
+           }
+        }
+
+    }
+
+    .profile {
+        background-color: darken($color: whitesmoke, $amount: 5);
+
+        > .profile-header {
+            background-color: darken($color: white, $amount: 5);
+        }
+    }
+    
+}
+
+
+@mixin dark-theme {
+
+    ::selection {
+        background: $awake-blue;
+    }
+
+    .full-page {
+        background-color: $awake-gold;
+    }
+
+    input {
+        color: white;
+    }
+    
+    .searchbar-suggestions {
+        // background-color: darken($color: $light-mode, $amount: 10);
+        background-color: $awake-navy;
+        color: $awake-cream;
+
+        > li:hover {
+            background-color: lighten($color: $awake-navy, $amount: 10);
+        }
+    }
+    
+    input {
+        background-color: lighten($color: $dark-mode, $amount: 20);
+    }
+    
+    // a {
+    //     color: $awake-navy;
+    // }
+
+    .nav-logo-light {
+        display: none;
+    }
+
+    .nav-logo-dark {
+        display: inline-block;
+    }
+
+    .sidebar, .nav-links, .dropdown-menu {
+        background-color: $awake-navy;
+    }
+
+    .dropdown-menu > li:hover, .sidebar > li a:hover, .sidebar a.active {
+        background-color: lighten($awake-navy, 20);
+    }
+}
+
+
+.dark-mode {
+    @include dark-theme;
+}
+
+.light-mode {
+    @include light-theme;
+}
+
+
+
+
+// @if $color-theme == $dark-mode {
+//     @include dark-theme;
+// } @else {
+//     @include light-theme;
+// }

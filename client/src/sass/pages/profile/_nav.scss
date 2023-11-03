@@ -1,0 +1,61 @@
+@use '../../base/' as *;
+
+.profile-nav {
+    margin: auto;
+    width: 75%;
+    padding: .5em 0;
+    
+
+    > article {
+        display: flex;
+        align-items: center;
+
+        > .profile-image {
+            width: 6em;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            border: 5px solid white;
+            object-fit: cover;
+            display: inline;
+        }
+
+        > span {
+            padding: 0 0 0 .5em;
+
+            > h2 {
+                display: block;
+                
+            }
+            > h4 {
+                display: block;
+                padding-left: .2em;
+                
+            }
+        }
+
+    }
+
+
+    > menu {
+        display: flex;
+        align-items: center;
+        padding-top: .5em;
+        height: 2em;
+
+
+        > a {
+            color: black;
+            // margin-left: 15px;
+            padding: 3px;
+            cursor: pointer;
+            transition: linear 250ms;
+            font-size: 1.2em;
+            padding: 0 .5em;
+            margin: 0 1em;
+    
+            &:hover{
+                color: $awake-red;
+            }
+        }
+    }
+}

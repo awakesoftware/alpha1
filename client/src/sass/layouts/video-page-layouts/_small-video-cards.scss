@@ -1,0 +1,122 @@
+//* Smaller Cards
+.home, .liked-videos, .history, .watch-later, .trending, .sub-uploads, .my-activity{
+
+    margin: .5rem;
+
+    > h1 {
+        text-align: center;
+        margin-bottom: .5em;
+        text-decoration: underline;
+    }
+
+    > div {
+
+        margin: 0 auto;
+        display: inline;
+
+        > i {
+            display: block;
+            text-align: center;
+        }
+        
+        > button {
+            position: absolute;
+            margin: 0 auto;
+        }
+    }
+
+    > section {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: inherit;
+        justify-content: space-around;
+        margin: auto;
+        gap: 1rem;
+        
+        > article {
+            height: min-content;
+            width: 20rem;
+            margin: 0 0 1em 0;
+            // box-shadow: 1px 1px 6px 10px #aaa ;
+            // border-radius: 5px;
+            // overflow: hidden;
+            
+            > a{
+                color: black;
+                
+                > img {
+                    width: 100%;
+                    aspect-ratio: 16/9;
+                    display: block;
+                    // margin: auto;
+                    object-fit: contain;
+                    background-color: black;
+                }
+                
+                > section { //* video thumbnail info
+                    display: grid;
+                    grid-template-columns: 50px auto;
+                    // grid-template-rows: 50px 20px 20px;
+                    margin-top: .25em;
+                    
+                    > img { //* user image on video
+                        aspect-ratio: 1/1;
+                        width: 100%;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        grid-area: 1/1/2/2;
+                    }
+                    
+                        & > *:not(img) {
+                            padding-left: .5em;
+                            display: block;
+                        }
+                        
+                        > article {
+                            grid-area: 1/2/2/3;
+                            
+                            > h4 { //* video title
+                                font-size: 1.4em;
+                            }
+                            
+                            > h5 {
+                                font-size: 1.2em;
+                                color: #555;
+                            }
+                            
+                            > span {
+                                color: #555;
+                
+                            }
+                    }
+                }
+            }
+        
+            > h4, p {
+                display: inline;
+                margin: 0 auto;
+            }
+        
+        }
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+    .home, .recommended, .liked-videos, .history, .watch-later, .trending{
+        width: 100%;
+        margin: 0;
+    
+        > section{
+            width: 100%;
+            flex-direction: column;
+            
+            > article {
+                width: 100%;
+                margin: 0;  
+            }
+        }
+    
+    }
+}

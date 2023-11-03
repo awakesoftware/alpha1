@@ -1,0 +1,28 @@
+
+@use '../../base' as *;
+
+.settings-sidenav {
+    min-width: 10rem;
+    background-color: $awake-red;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+                
+        > a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: $awake-cream;
+            display: block;
+
+            &:hover {
+                background-color: lighten($color: $awake-red, $amount: 20);
+            }
+            
+            &.active {
+                // color: $awake-gold;
+                background-color: lighten($color: $awake-red, $amount: 20);
+            }
+        }
+}

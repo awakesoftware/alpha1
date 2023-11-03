@@ -1,0 +1,37 @@
+@use '../base' as *;
+
+.landing-page {
+    
+    > img {
+        position: absolute;
+    }
+
+    > section {
+        background-color: $awake-red;
+        color: $awake-cream;
+        border-radius: 10px;
+        overflow: hidden;
+        width: clamp(20rem, 1000px, 70%);
+        margin: 5rem auto;
+        height: 40rem;
+
+        overflow-y: scroll;
+        overscroll-behavior: contain;
+
+        > h1 {
+            text-align: center;
+        }
+        
+        > article {    
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 1em;
+
+            > p {
+                width: 70%;
+            }
+        }
+    }
+}

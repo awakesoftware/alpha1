@@ -1,0 +1,26 @@
+//* Primary Colors
+$awake-red: hsl(353, 69%, 37%); //* #a11e2d
+$awake-purple: hsl(250, 33%, 41%); //* #50458a
+$awake-blue: hsl(196, 100%, 33%); //* #007caa
+$awake-gold: hsl(42, 67%, 57%); //* #dbaf47
+$awake-navy: hsl(245, 48%, 24%); //* #241f59
+
+//* Secondary Colors
+$awake-tan: hsl(29, 46%, 46%); //* #ad7540
+$awake-brown: hsl(15, 59%, 22%); //* #592717
+$awake-cream: hsl(30, 100%, 94%); //* #ffefdf
+
+//* Fonts
+@mixin heading-font {
+    font-family: trajan-pro-3, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@mixin main-font {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+

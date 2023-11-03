@@ -1,0 +1,101 @@
+.video {
+    width: 100%;
+
+
+    > video {
+        width: 100%;
+        aspect-ratio: 16/9;
+        border: none;
+        background: black;
+    }
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 85% 15%;
+    // width: 80%;
+    // margin: 0 auto;
+    gap: .5em;
+    padding: 1em;
+}
+
+.video-videoCard {
+    text-align: center;
+    margin: 17px 0px 0px 0px;
+}
+
+.video-header__primary {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    /* justify-items: end; */
+    margin: 10px 0px;
+}
+
+.video-header__primary > .video-details{
+    grid-column: 1/2;
+}
+
+.video-interactions{
+    float: right;
+    grid-column: 3/4;
+}
+
+.interaction {
+    margin: 0px 0px 0px 15px;
+}
+
+.video-image{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    position: relative;
+    z-index: 1;
+    object-fit: cover;
+}
+
+tippy-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    position: relative;
+    z-index: 1;
+    object-fit: cover;
+}
+
+.video-header__secondary {
+    display: grid;
+    grid-template-columns: 5% 30% 65% 0%;
+    justify-items: end;
+    margin: 10px 0px;
+}
+
+.video-header__seconday-user-info {
+    width: 50px;
+}
+
+.video-add-comment {
+    margin: 40px 0px 25px 0px;
+}
+
+select {
+    font-family: 'FontAwesome', 'Second Font name'
+}
+
+.playlists{
+    border: 1px solid black;
+    position: absolute;
+    z-index: 1;
+    width: inherit;
+    list-style: none;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.playlist{
+    transition: 250ms linear;
+}
+.playlist:hover{
+    background-color: rgb(180, 180, 180);
+}

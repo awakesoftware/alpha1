@@ -1,0 +1,12 @@
+.about-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.eosio {
+    grid-column: 0/1;
+}
+
+.about-text {
+    grid-column: 2/3;
+}

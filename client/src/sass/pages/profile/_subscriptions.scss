@@ -1,0 +1,22 @@
+.sub-icons{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1rem;
+    list-style: none;
+    height: min-content;
+    padding: 1rem 0;
+
+}
+
+.user-image{
+    aspect-ratio: 1/1;
+    width: 4em;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+
+    & ~ p {
+        text-align: center;
+    }
+}

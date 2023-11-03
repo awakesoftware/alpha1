@@ -1,0 +1,15 @@
+.add-new-comment {
+    transition-duration: 0.2s;
+}
+
+.add-new-comment:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    box-shadow: 0 3.75px 5px 0 rgba(0,0,0,0.24), 0 5.3125px 15.625px 0 rgba(0,0,0,0.19);
+}
+
+.adding-new-comment {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    box-shadow: 0 3.75px 5px 0 rgba(0,0,0,0.24), 0 5.3125px 15.625px 0 rgba(0,0,0,0.19);
+}

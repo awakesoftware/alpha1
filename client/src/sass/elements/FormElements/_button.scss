@@ -1,0 +1,119 @@
+.button {
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  margin-right: 1rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button--color--red {
+  border: 1px solid #ff0055;
+  background: #ff0055;
+}
+
+.button--color--red:hover,
+.button--color--red:active {
+  background: #ff4382;
+  border-color: #ff4382;
+}
+
+.button--color--darkred {
+  border: 1px solid #80002a;
+  background: #80002a;
+}
+
+.button--color--darkred:hover,
+.button--color--darkred:active {
+  background: #8d0d37;
+  border-color: #8d0d37;
+}
+
+.button--color--orange {
+  border: 1px solid #ff8800;
+  background: #ff8800;
+}
+
+.button--color--orange:hover,
+.button--color--orange:active {
+  background: #f79f3a;
+  border-color: #f79f3a;
+}
+
+.button--color--blue {
+  border: 1px solid #00a2ff;
+  background: #00a2ff;
+}
+
+.button--color--blue:hover,
+.button--color--blue:active {
+  background: #48bcff;
+  border-color: #48bcff;
+}
+
+.button--color--green {
+  border: 1px solid #2de65b;
+  background: #2de65b;
+}
+
+.button--color--green:hover,
+.button--color--green:active {
+  background: #5ce67e;
+  border-color: #5ce67e;
+}
+
+.button--color--yellow {
+  border: 1px solid #ffd900;
+  background: #ffd900;
+}
+
+.button--color--yellow:hover,
+.button--color--yellow:active {
+  background: #ffe346;
+  border-color: #ffe346;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button--inverse {
+  background: transparent;
+  color: #ff0055;
+}
+
+.button--inverse:hover,
+.button--inverse:active {
+  color: white;
+  background: #ff0055;
+}
+
+.button--danger {
+  background: #830000;
+  border-color: #830000;
+}
+
+.button--danger:hover,
+.button--danger:active {
+  background: #f34343;
+  border-color: #f34343;
+}
+
+.button:disabled,
+.button:hover:disabled,
+.button:active:disabled {
+  background: #ccc;
+  color: #979797;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
+.button--small {
+  font-size: 0.8rem;
+}
+
+.button--big {
+  font-size: 1.5rem;
+}

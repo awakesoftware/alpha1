@@ -1,0 +1,57 @@
+@use '../base' as *;
+
+.notifications {
+    
+    > h1 {
+        text-align: center;
+    }
+
+    > i {
+        margin: 0 auto;
+    }
+
+    > main {
+        
+        > ul {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            max-width: 500px;
+            margin: 0 auto;
+            padding-bottom: 1em;
+
+            > section {
+                display: flex;
+                align-items: center;
+                gap: .5em;
+                justify-content: space-around;
+
+                overflow: hidden;
+                border-radius: 5px;
+                box-shadow: 1px 1px 10px #aaa;
+
+                height: 6rem;
+
+                > a {
+                    display: inline;
+
+                    > img {
+                        aspect-ratio: 1/1;
+                        object-fit: cover;
+                        width: 3rem;
+                        border-radius: 50%;
+                        border: 2px solid $awake-red;
+                    }
+                }
+                > span {
+                    color: black;
+                    
+                    > a {
+                        color: $awake-blue;
+                    }
+                }
+            }
+        }
+
+    }
+}

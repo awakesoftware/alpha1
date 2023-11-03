@@ -1,0 +1,32 @@
+.reply{
+    margin-left: 50px; 
+    width: 100%;
+
+    section{
+        margin: 25px 10px;
+    }
+}
+
+.reply-image{
+    width:50px; 
+    border-radius: 50%; 
+    float: left;
+}
+
+.reply-modal{
+    width: 500px;
+
+    form {
+        
+        input{
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-bottom: 1px solid grey;
+            width: 100%;
+            margin-top: 15px;
+            background-color: white;
+        }
+    }
+}
+

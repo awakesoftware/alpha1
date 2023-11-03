@@ -1,0 +1,139 @@
+@use '../base' as *;
+
+.dropdown-btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    list-style: none;
+    position: absolute;
+    z-index: 1;
+    height: min-content;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .3);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 10px 10px 5px opacify($color: #333, $amount: .5);
+    
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+// .dropdown.active > button + .dropdown-menu,
+// .dropdown-menu:focus-within{
+//     opacity: 1;
+//     transform: translateY(0);
+//     pointer-events: auto;
+// }
+
+.dropdown.active > .dropdown-menu,
+.dropdown-menu:focus-within {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.profile-dropdown-menu {
+    width: 10rem;
+    right: .5em;
+
+    > a, article {
+        height: 2em;
+        
+        display: flex;
+        align-items: center;
+
+        color: $awake-cream;
+        cursor: pointer;
+
+        > i {
+            margin: 0 .5em;
+            color: $awake-gold;
+        }
+    }
+}
+
+.notifications-dropdown-menu {
+    width: 25rem;
+    right: 5rem;
+    height: 30rem;
+
+    overflow-y: scroll;
+    overscroll-behavior: contain;
+    
+    > a {
+        text-align: center;
+        color: $awake-cream;
+        text-decoration: underline;
+        
+        // > h3:hover {
+        //     color: darken($color: $awake-cream, $amount: 10);
+        // }
+    }
+    
+    > main {
+        
+        > ul {
+
+            > section {
+                display: flex;
+                align-items: center;
+                gap: .5em;
+                justify-content: space-around;
+
+                > a {
+                    display: inline;
+
+                    > img {
+                        aspect-ratio: 1/1;
+                        object-fit: cover;
+                        width: 3rem;
+                        border-radius: 50%;
+                        border: 2px solid $awake-cream;
+                    }
+                }
+                > span {
+                    color: $awake-cream;
+                    
+                    > a {
+                        color: $awake-cream;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.login-dropdown {
+    width: 20rem;
+    height: 17rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    color: $awake-cream;
+
+    > h2 {
+        text-decoration: underline;
+    }
+
+    > section {
+
+        > div {
+
+            > input {
+                border-radius: 5px;
+            }
+        }
+    }
+
+    > button {
+        margin-top: 3rem;
+    }
+    
+}

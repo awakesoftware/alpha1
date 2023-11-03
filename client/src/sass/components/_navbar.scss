@@ -1,0 +1,86 @@
+@use '../base' as *;
+
+.nav-links{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 33.3333333%);
+    z-index: 3;
+    
+    section{
+        height: 4rem;
+    }
+}
+
+.logged-out-navlinks {
+
+    > article {
+        float: right;
+        margin: 0 1rem;
+    }
+
+    .signin-dropdown-menu {
+        right: 1rem;
+    }
+}
+
+
+.awake{
+    float:left;
+    margin-left: 5px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-right: .5em;
+    gap: 1.5em;
+    
+    > a {
+        display: inline-block;
+        color: #ffefdf;
+        text-align: center;
+        text-decoration: none;
+    }
+}
+
+
+.nav-logo-light, .nav-logo-dark {
+    height: 70px;
+    aspect-ratio: 1/1;
+}
+
+.notifications-icon{
+    padding: 0;
+    font-size: 1.3em;
+}
+
+.wide-nav{
+    display: inline;
+    float: right;
+
+    > a, > button {
+        text-align: center;
+
+        > i {
+            color: $awake-cream;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+    .wide-nav{
+        display: none;
+    }
+    .awake{
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+}

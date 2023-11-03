@@ -1,0 +1,87 @@
+//* Simpler small video cards
+.profile-videos { 
+    
+    margin: .5rem;
+
+    > h1 {
+        text-align: center;
+        margin-bottom: .5em;
+        text-decoration: underline;
+    }
+
+    > div {
+
+        margin: 0 auto;
+        display: inline;
+
+        > i {
+            display: block;
+            text-align: center;
+        }
+        
+        > button {
+            position: absolute;
+            margin: 0 auto;
+        }
+    }
+
+    > section {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: inherit;
+        justify-content: space-around;
+        margin: auto;
+        gap: 1rem;
+        
+        > article {
+            height: min-content;
+            width: 20rem;
+            margin: 0 0 1em 0;
+            // box-shadow: 1px 1px 6px 10px #aaa ;
+            // border-radius: 5px;
+            // overflow: hidden;
+            
+            > a{
+                color: black;
+                
+                > img {
+                    width: 100%;
+                    aspect-ratio: 16/9;
+                    display: block;
+                    // margin: auto;
+                    object-fit: contain;
+                    background-color: black;
+                }
+                
+                > section { //* video thumbnail info
+                    display: flex;
+                    margin-top: .25em;
+                    
+                    > img { //* user image on video
+                        display: none;
+                    }
+                        
+                    h4 { //* video title
+                        font-size: 1.4em;
+                    }
+                    
+                    h5 {
+                        display: none;
+                    }
+                    
+                    span {
+                        color: #555;
+                    }
+                }
+            }
+        
+            > h4, p {
+                display: inline;
+                margin: 0 auto;
+            }
+        
+        }
+    }
+
+}

@@ -1,0 +1,61 @@
+.studio-list {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    gap: 1em;
+
+    > ul {
+
+        list-style: none;
+        
+        //* Profile Studio Video cards
+        .studio-video { 
+            width: 100%;   
+            display: flex;
+
+            margin: 1em 0;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 1px 1px 15px #aaa;
+
+            
+            > a {
+                display: grid;
+                grid-template-columns: 30% 70%;
+                height: inherit;
+                width: inherit;
+        
+                > img {
+                    width: inherit;
+                    aspect-ratio: 16/9;
+                    display: block;
+                }
+                > article {
+                    padding: 0 1em;
+                    
+                    > h4, h5 {
+                        display: inline;
+                        color: black;
+                    }
+                    > h4 {
+                        font-size: 1.5em;
+                    }
+                    > h5 {
+                        font-size: 1.2em;
+                    }
+                }
+            }
+                
+            > button {
+                border: none;
+                background-color: inherit;
+                height: min-content;
+                margin: 1em;
+                
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+

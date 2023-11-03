@@ -1,0 +1,63 @@
+.recommended {
+
+    > h2 {
+        text-align: center;
+        text-decoration: underline;
+    }
+    
+    > section {
+        display: flex;
+        flex-direction: column;
+        // width: 100%;
+        // justify-content: space-around;
+        gap: .5em;
+        // height: clamp(100%, 100%, 100%);
+        // overflow-y: scroll;
+
+        > article {
+            display: inline;
+            
+            > a, > div {
+                position: relative;
+                display: grid;
+                grid-template-columns: 40% 60%;
+                gap: .5em;
+
+
+                > img {
+                    width: 100%;
+                    aspect-ratio: 16/9;
+                    background-color: black;
+                }
+
+                > section {
+
+                    > img {
+                        // aspect-ratio: 1/1;
+                        // width: 2em;
+                        display: none;
+
+                    }
+                    
+                    > article {
+
+                        > h4 {
+                            font-size: 1.4em;
+                            color: black;
+                        }
+
+                        > h5 {
+                            font-size: 1.1em;
+                            color: #444;
+                        }
+                        
+                        > span {
+                            font-size: .9em;
+                            color: #444;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
